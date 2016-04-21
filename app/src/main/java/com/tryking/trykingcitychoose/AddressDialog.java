@@ -151,6 +151,9 @@ public class AddressDialog extends Dialog {
         database.close();
         manager.closeDatabase();
         adapter.notifyDataSetChanged();
+        if (cityList.size() == 0) {
+            printAddress();
+        }
     }
 
     private void initList2(String pCode) {
@@ -179,6 +182,9 @@ public class AddressDialog extends Dialog {
         database.close();
         manager.closeDatabase();
         adapter.notifyDataSetChanged();
+        if (cityList.size() == 0) {
+            printAddress();
+        }
     }
 
     private void initList3(String pCode) {
@@ -207,6 +213,9 @@ public class AddressDialog extends Dialog {
         database.close();
         manager.closeDatabase();
         adapter.notifyDataSetChanged();
+        if (cityList.size() == 0) {
+            printAddress();
+        }
     }
 
     private void initList4(String pCode) {
